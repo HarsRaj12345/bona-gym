@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh FItness</title>
+</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /*css Reset*/
+    body {
+
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-image: url(	"https://cdn.pixabay.com/photo/2017/08/07/14/02/man-2604149__480.jpg");
+    }
+
+    .left {
+        display: inline-block;
+        border: 2px solid red;
+        position: absolute;
+        left: 60px;
+        top: 20px;
+
+    }
+
+    .left img {
+        width: 100px;
+        height: 79px;
+        /*filter: invert(100%);--> It coinert black image into white and vive versa*/
+
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 19px;
+        font-size: 24px;
+    }
+
+    .mid {
+        border: 2px solid yellow;
+        width: 50%;
+        margin: 25px auto;
+        display: block
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        border: 2px solid purple;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+
+        display: inline-block;
+        font-size: 25px;
+        ;
+    }
+
+    .navbar li a {
+        color: blue;
+        text-decoration: none;
+        padding: 34px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: gold;
+    }
+
+    .btn {
+        font-size: 'Baloo Bhai', cursive;
+        padding: 5px 15px;
+        margin: 0px 9px;
+        background-color: greenyellow;
+        border: 4px solid green;
+        border-radius: 10px;
+        font-size: 20 px;
+        cursor: pointer;
+        
+        
+        
+    }
+
+    .Container {
+        border: 5px solid blueviolet;
+        margin: 106px 90px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 24px;
+
+
+    }
+
+    .btn:hover {
+        background-color: rgba(238, 205, 16, 0.918);
+    
+    }
+
+    .form-group input {
+        text-align: cente;
+        display: block;
+        padding:  5 px ,15px;
+        width: 70%;
+        border-radius: 10px;
+        margin: 11px auto;
+        font-size: 25px;
+
+
+    }
+
+    .Container h1 {
+        text-align: center;
+    }
+
+    .Container button {
+        display: block;
+        width: 75%;
+        margin: 20px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!--left  box for  logo-->
+        <div class="left">
+            <img src="https://image.pngaaa.com/298/234298-middle.png ">
+            <div>Harsh fitness</div>
+
+        </div>
+        <!--mid box for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a> </li>
+                <li><a href="#"> About Us</a> </li>
+                <li> <a href="#">Fitness Calculator</a></li>
+                <li><a href="#"> Contact us</a> </li>
+            </ul>
+        </div>
+        <!--Right box for button-->
+        <div class="right">
+        
+            <button class="btn"> Contact Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="Container">
+        <h1>Join the best gym of Dhanbad now</h1>
+        <form action="mailto: hraj121220@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+                Enter your Name <br> <input type="text" name=" Customer Name">
+            </div>
+            
+            <div class="form-group">
+                Enter your Age <input type="number" name=" Age">
+            </div>
+            
+            <div class="form-group">
+                Enter your Mobile Number<input type="number" name="  Mobile Number">
+            </div>
+            
+            <div class="form-group">
+                Enter your e-mail id<input type="email" name=" email Id">
+            </div>
+            
+            <div class="form-group">
+                Gender:<br> male<input type="radio" name="gender" value="male"> 
+                female<input type="radio" name="gender" value="female ">
+                 Other<input type="radio" name="gender" value="other">
+              </div>
+                    
+                    <button class="btn"> <input type="submit" value="Submit" ></button>
+                    
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
